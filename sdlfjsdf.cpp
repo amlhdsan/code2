@@ -34,6 +34,8 @@ inline void writeln(int x) {
 }
 
 int main() {
+    writeln(123123123);
+    write(read());
     
 
     return 0;
