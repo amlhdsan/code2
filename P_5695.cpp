@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
-// #include "P_11036.h"
+#include <iostream>
+#include <cstdio>
 using namespace std;
 
-int n;
+int a, b;
 
 inline int read() {
     int x = 0, f = 1;
@@ -35,25 +35,12 @@ inline void writeln(int x) {
     putchar('\n');
 }
 
-inline void kk()
-{
-    long long x = (n & (-n));
-    cout << 1 << " " << (x << 1) << " " << n + (x << 1) << '\n';
-}
+inline void 
 
-inline void solve() {
-    // int n;
-    n = read();
-    kk();
-}
+int main() {
 
-
-int main()
-{
-    int T = read();
-    while(T--) {
-        solve();
-    }
+    a = read();
+    b = read();
     
 
     return 0;
