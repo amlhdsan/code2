@@ -1,8 +1,8 @@
-#include <iostream>
-#include <cstdio>
+#include <bits/stdc++.h>
+#define int long long
 using namespace std;
 
-int a, b;
+int a, b, c;
 
 inline int read() {
     int x = 0, f = 1;
@@ -35,12 +35,20 @@ inline void writeln(int x) {
     putchar('\n');
 }
 
-inline void 
+inline void solve() {
+    
+}
 
 int main() {
 
     a = read();
-    b = read();
+    // b = read();
+
+    int s = a * a + 1;
+
+    for(int i = 1; i <= a; ++i) {
+
+    }
     
 
     return 0;
