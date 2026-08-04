@@ -1,39 +1,25 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
-inline int read() {
-    int x = 0, f = 1;
-    char ch = getchar();
-    while(ch < '0' || ch > '9') {
-        if(ch == '-') {
-            f = -1;
-        }
-        ch = getchar();
-    }
-    while(ch >= '0' && ch <= '9') {
-        x = (x << 3) + (x << 1) + (ch ^ 48);
-        ch = getchar();
-    }
-    return x * f;
-}
-
-inline void write(int x) {
-    if(x < 0) {
-        putchar('-');
-        x = -x;
-    }
-    if(x > 9)
-        write(x / 10);
-    putchar(x % 10 + '0');
-}
-
-inline void writeln(int x) {
-    write(x);
-    putchar('\n');
-}
-
 int main() {
-    
+    int N;
+    cin >> N;
+
+    int f[5] = {0, 3, 1, 4, 2};
+    // f[1] = 3;
+    // f[2] = 1;
+    // f[3] = 4;
+    // f[4] = 2;
+
+    for (int i = 1; i <= N; ++i) {
+        for (int j = 1; j <= N; ++j) {
+            int x;
+            cin >> x;
+            cout << f[x] << (j == N ? "" : " ");
+        }
+        cout << "\n";
+    }
 
     return 0;
 }
