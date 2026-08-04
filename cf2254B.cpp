@@ -41,9 +41,26 @@ inline void solve() {
 
     int ans = 0;
 
-    for(int i = 1; i <= n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         if(str[i] != str[i - 1]) {
             ++ans;
+        }
+    }
+    // writeln(ans);
+    int flag = 0;
+    for (int i = 1; i <= n; ++i) {
+        if(str[i] == str[i + 2] && str[i] != str[i + 1]) {
+            ans -= 2;
+            flag = 1;
+            break;
+        }
+    }
+    if(!flag) {
+        for(int i = 2; i <= n - 1; ++i) {
+            if(str[i] != str[i - 1] && str[i] != str[i + 1]) {
+                ans -= 1;
+                break;
+            }
         }
     }
     writeln(ans);
@@ -53,7 +70,7 @@ int main() {
     
     int t = read();
 
-    while(t--) {
+    while (t--) {
         solve();
     }
 
