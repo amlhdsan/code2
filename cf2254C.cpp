@@ -36,6 +36,8 @@ inline void writeln(int x) {
     putchar('\n');
 }
 
+
+
 inline void solve() {
     int n = read();
     string a, b;
@@ -68,6 +70,9 @@ int main() {
         solve();
     }
     
+    if(t == 0) {
+        
+    }
 
     return 0;
 }
