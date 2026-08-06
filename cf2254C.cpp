@@ -1,4 +1,7 @@
 #include<bits/stdc++.h>
+
+#define mod 666623333
+
 using namespace std;
 
 inline int read(){
@@ -62,5 +65,7 @@ int main(){
     int T=read();
     while(T--)
         solve();
+
+        // % mod
     return 0;
 }
