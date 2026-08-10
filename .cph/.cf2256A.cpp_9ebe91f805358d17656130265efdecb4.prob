@@ -1,0 +1,1 @@
+{"name":"Local: cf2256A","url":"/Users/amlhdsan/code2/cf2256A.cpp","tests":[{"id":1786290439539,"input":"6\n5 5 5\n4 6 9\n2 3 10\n0 0 7\n2 3 5\n20 4 5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/amlhdsan/code2/cf2256A.cpp","group":"local","local":true}

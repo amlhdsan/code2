@@ -59,6 +59,10 @@ void solve(){
     }
 
     writeln(n-ans);
+
+    if(!ans) {
+        
+    }
 }
 
 int main(){
