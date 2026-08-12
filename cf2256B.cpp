@@ -54,6 +54,10 @@ ll calc(string s){
     return (a+b)%mod;
 }
 
+inline void tobe() {
+    
+}
+
 int main(){
     int T=read();
     while(T--){
