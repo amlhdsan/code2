@@ -40,6 +40,12 @@ inline void writeln(int x) {
     putchar('\n');
 }
 
+inline void build(int p, int l, int r) {
+    if(l == r) {
+        
+    }
+}
+
 int main() {
 
     // int n, k;
@@ -54,11 +60,7 @@ int main() {
 
     sort(a + 1, a+ n + 1);
 
-    for(int i = 1; i <= n; ++i) {
-        if(tag[i]) continue;
 
-        
-    }
     
 
     return 0;
