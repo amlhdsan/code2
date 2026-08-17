@@ -56,10 +56,20 @@ inline void solve() {
         maxn = max(maxn, a[i]);
     }
 
-    if(minn > maxn) {
+    if(minn > maxn + 1) {
         puts("YES");
     } else {
         puts("NO");
+    }
+}
+
+// inline void output() {
+}
+
+for(int i = 1; i <= n; ++i) {
+    if(! (i & 1)) {
+        int p = i - 1;
+        
     }
 }
 
