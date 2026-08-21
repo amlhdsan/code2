@@ -63,15 +63,17 @@ inline void solve() {
     }
 }
 
-// inline void output() {
-}
 
+{}
+/*
 for(int i = 1; i <= n; ++i) {
     if(! (i & 1)) {
         int p = i - 1;
-        
+
     }
 }
+
+*/
 
 int main() {
     int t = read();
