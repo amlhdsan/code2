@@ -5,13 +5,13 @@ int a, b, c;
 int na, nb, nc;
 int ma, mb, mc;
 int E;
-int a1, a2, a3;
+int a1 = 1000000, a2 = 1000000, a3 = 1000000;
 
 int main() {
 
-    scanf("%d %d %d", &a, &b, &c);
-    scanf("%d %d %d", &na, &nb, &nc);
-    scanf("%d %d %d", &ma, &mb, &mc);
+    scanf("%d,%d,%d", &a, &b, &c);
+    scanf("%d,%d,%d", &na, &nb, &nc);
+    scanf("%d,%d,%d", &ma, &mb, &mc);
     scanf("%d", &E);
 
     for(int i = -ma; i <= na; ++i) {
@@ -28,7 +28,29 @@ int main() {
         }
     }
 
-    printf("%d %d %d\n", a1, a2, a3);
+    if(a1 == 1000000) {
+        printf("Cannot buy.\n");
+        return 0;
+    }
+
+    if(a1 > 0) {
+        printf("Buyer pays %d bills of %d yuan.\n", a1, a);
+    }
+    if(a1 < 0) {
+        printf("Seller changed %d bills of %d yuan.\n", -a1, a);
+    }
+    if(a2 > 0) {
+        printf("Buyer pays %d bills of %d yuan.\n", a2, b);
+    }
+    if(a2 < 0) {
+        printf("Seller changed %d bills of %d yuan.\n", -a2, b);
+    }
+    if(a3 > 0) {
+        printf("Buyer pays %d bills of %d yuan.\n", a3, c);
+    }
+    if(a3 < 0) {
+        printf("Seller changed %d bills of %d yuan.\n", -a3, c);
+    }
 
     return 0;
 }
