@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+static int il(int y) {
+    return (y % 4 == 0 && y % 100 != 0) || (y % 400 == 0);
+}
+
+static int gd(int y, int m) {
+    int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    if (m == 2 && il(y)) return 29;
+    return days[m];
+}
+
+int main(void) {
+    int y, m, d;
+    if (scanf("%d,%d,%d", &y, &m, &d) != 3) {
+        printf("Invalid\n");
+        return 0;
+    }
+
+    if (y < 1600 || y > 2100 || m < 1 || m > 12 || d < 1 || d > gd(y, m)) {
+        printf("Invalid\n");
+        return 0;
+    }
+
+    long long tot = 0;
+    for (int i = 1600; i < y; ++i) {
+        tot += il(i) ? 366 : 365;
+    }
+    for (int i = 1; i < m; ++i) {
+        tot += gd(y, i);
+    }
+    tot += (d - 1);
+
+    int ans = (int)((6 - 1 + tot) % 7 + 1);
+    printf("%d\n", ans);
+
+    return 0;
+}

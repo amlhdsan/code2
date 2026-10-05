@@ -6,14 +6,14 @@ int main() {
     unsigned long n, max;
     scanf("%lu,%lu", &n, &max);
     unsigned long sum = 0;
-    unsigned long factorial = 1;
+    unsigned long f = 1;
     for (unsigned long i = 1; i <= n; i++) {
-        factorial *= i;
-        if (sum + factorial > max) {
+        f *= i;
+        if (sum + f > max) {
             printf("overflow at %lu!\n", i);
             return 0;
         }
-        sum += factorial;
+        sum += f;
     }
     printf("%lu\n", sum);
 
